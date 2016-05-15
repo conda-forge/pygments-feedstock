@@ -5,7 +5,7 @@ Home: http://pygments.org/
 
 Package license: BSD 2-clause
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: Pygments is a generic syntax highlighter suitable for use in code hosting, forums, wikis or other applications that need to prettify source code.
 
@@ -69,6 +69,7 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pygments-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/pygments-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/pygments-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pygments-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pygments-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pygments-feedstock/branch/master)
