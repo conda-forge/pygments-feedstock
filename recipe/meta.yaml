@@ -10,7 +10,7 @@ source:
   md5: ed3fba2467c8afcda4d317e4ef2c6150
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - pygmentize = pygments.cmdline:main
   script: python setup.py install --single-version-externally-managed --record=record.txt
@@ -22,6 +22,7 @@ requirements:
 
   run:
     - python
+    - setuptools
 
 test:
   imports:
@@ -30,6 +31,7 @@ test:
     - pygments.lexers
     - pygments.filters
     - pygments.formatters
+    - pygments.plugin
 
   commands:
     - pygmentize -h
@@ -43,3 +45,4 @@ extra:
   recipe-maintainers:
     - jakirkham
     - pelson
+    - ocefpaf
