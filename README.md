@@ -14,14 +14,15 @@ Summary: Pygments is a generic syntax highlighter suitable for use in code hosti
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pygments-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pygments-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/pygments-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pygments-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pygments-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pygments-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/pygments-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/pygments-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pygments/badges/version.svg)](https://anaconda.org/conda-forge/pygments)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pygments/badges/downloads.svg)](https://anaconda.org/conda-forge/pygments)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pygments-green.svg)](https://anaconda.org/conda-forge/pygments) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pygments.svg)](https://anaconda.org/conda-forge/pygments) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pygments.svg)](https://anaconda.org/conda-forge/pygments) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pygments.svg)](https://anaconda.org/conda-forge/pygments) |
 
 Installing pygments
 ===================
@@ -66,6 +67,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========

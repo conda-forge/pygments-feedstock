@@ -10,13 +10,15 @@ source:
   sha256: dbae1046def0efb574852fab9e90209b23f556367b5a320c0bcb871c77c3e8cc
 
 build:
-  number: 0
+  noarch: python
+  number: 1
   entry_points:
     - pygmentize = pygments.cmdline:main
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
-  build:
+  host:
+    - pip
     - python
     - setuptools
 
