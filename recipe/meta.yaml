@@ -1,4 +1,4 @@
-{% set version = "2.4.2" %}
+{% set version = "2.5.0" %}
 
 package:
   name: pygments
@@ -7,7 +7,7 @@ package:
 source:
   fn: Pygments-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/P/Pygments/Pygments-{{ version }}.tar.gz
-  sha256: 881c4c157e45f30af185c1ffe8d549d48ac9127433f2c380c24b84572ad66297
+  sha256: cdc7a45df8c489a965948fb4d26d8411927bae48771519c61ebca88d076a5aae
 
 build:
   noarch: python
