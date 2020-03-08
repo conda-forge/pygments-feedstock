@@ -3,7 +3,7 @@ About pygments
 
 Home: http://pygments.org/
 
-Package license: BSD 2-clause
+Package license: BSD-2-clause
 
 Feedstock license: BSD 3-Clause
 
