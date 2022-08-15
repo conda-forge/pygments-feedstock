@@ -1,5 +1,5 @@
 {% set name = "pygments" %}
-{% set version = "2.12.0" %}
+{% set version = "2.13.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/Pygments-{{ version }}.tar.gz
-  sha256: 5eb116118f9612ff1ee89ac96437bb6b49e8f04d8a13b514ba26f620208e26eb
+  sha256: 56a8508ae95f98e2b9bdf93a6be5ae3f7d8af858b43e02c5a2ff083726be40c1
 
 build:
   number: 0
