@@ -1,6 +1,5 @@
 {% set name = "pygments" %}
-{% set version = "2.14.0" %}
-
+{% set version = "2.15.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,22 +7,22 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/Pygments-{{ version }}.tar.gz
-  sha256: b3ed06a9e8ac9a9aae5a6f5dbe78a8a58655d17b43b93c078f094ddc476ae297
+  sha256: f7e36cffc4c517fbc252861b9a6e4644ca0e5abadf9a113c72d1358ad09b9500
 
 build:
-  number: 0
-  noarch: python
   entry_points:
     - pygmentize = pygments.cmdline:main
+  noarch: python
   script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
+    - setuptools >=61
     - pip
   run:
-    - python >=3.6
-    - setuptools
+    - python >=3.7
 
 test:
   imports:
