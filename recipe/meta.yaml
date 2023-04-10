@@ -1,7 +1,6 @@
 {% set name = "pygments" %}
 {% set version = "2.15.0" %}
 
-
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -11,19 +10,19 @@ source:
   sha256: f7e36cffc4c517fbc252861b9a6e4644ca0e5abadf9a113c72d1358ad09b9500
 
 build:
-  number: 0
-  noarch: python
   entry_points:
     - pygmentize = pygments.cmdline:main
+  noarch: python
   script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
+    - setuptools >=61
     - pip
   run:
-    - python >=3.6
-    - setuptools
+    - python >=3.7
 
 test:
   imports:
